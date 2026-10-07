@@ -4,7 +4,7 @@ title: "O.R.S. (Orbital River Station)"
 featured: true
 home_order: 3
 summary: "floating artwork raising awareness of our relationship with the Rhône river and flood management"
-cover: "[[Attachments/ORS/ORS_01-1024x671.jpg]]"
+cover: "[[assets/images/ORS/ORS_01-1024x671.jpg]]"
 ---
 # O.R.S. (Orbital River Station)
 
@@ -25,14 +25,14 @@ O.R.S. was presented to the public for the first time at the 2019 Avignon Festiv
 
 ## Images
 
-![[Attachments/ORS/ORS_01-1024x671.jpg]]
+![[assets/images/ORS/ORS_01-1024x671.jpg]]
 
 *Photo credit: Bipolar production / HeHe*
 
-![[Attachments/ORS/ORS_02-1024x640.jpg]]
+![[assets/images/ORS/ORS_02-1024x640.jpg]]
 
 *Photo credit: Bipolar production / HeHe*
 
-![[Attachments/ORS/ORS_00-1024x683.jpg]]
+![[assets/images/ORS/ORS_00-1024x683.jpg]]
 
 *Photo credit: Bipolar production / HeHe*
