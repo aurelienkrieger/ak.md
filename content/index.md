@@ -1,7 +1,6 @@
 ---
 type: page
 title: "Aurélien Krieger"
-permalink: /
 ---
 # Aurélien Krieger
 
