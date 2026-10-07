@@ -4,7 +4,7 @@ title: "PANORAMA"
 featured: true
 home_order: 6
 summary: "series of independent art events featuring film screenings, performances, visual art and new media art"
-cover: "[[Attachments/panorama/panorama_01-960x640.jpg]]"
+cover: "[[assets/images/panorama/panorama_01-960x640.jpg]]"
 ---
 # PANORAMA
 
@@ -22,24 +22,24 @@ The 4th edition of PANORAMA was featured as part of the [East End Film Festival]
 
 ## Images
 
-![[Attachments/panorama/panorama_01-960x640.jpg]]
+![[assets/images/panorama/panorama_01-960x640.jpg]]
 
-![[Attachments/panorama/panorama_02-960x640.jpg]]
+![[assets/images/panorama/panorama_02-960x640.jpg]]
 
-![[Attachments/panorama/panorama_04-960x640.jpg]]
+![[assets/images/panorama/panorama_04-960x640.jpg]]
 
-![[Attachments/panorama/panorama_05-960x640.jpg]]
+![[assets/images/panorama/panorama_05-960x640.jpg]]
 
-![[Attachments/panorama/panorama_06-960x640.jpg]]
+![[assets/images/panorama/panorama_06-960x640.jpg]]
 
-![[Attachments/panorama/panorama_07-960x640.jpg]]
+![[assets/images/panorama/panorama_07-960x640.jpg]]
 
-![[Attachments/panorama/panorama_08-960x640.jpg]]
+![[assets/images/panorama/panorama_08-960x640.jpg]]
 
-![[Attachments/panorama/panorama_09-960x640.jpg]]
+![[assets/images/panorama/panorama_09-960x640.jpg]]
 
-![[Attachments/panorama/panorama_10-960x640.jpg]]
+![[assets/images/panorama/panorama_10-960x640.jpg]]
 
-![[Attachments/panorama/panorama_11-960x640.jpg]]
+![[assets/images/panorama/panorama_11-960x640.jpg]]
 
-![[Attachments/panorama/panorama_12-960x640.jpg]]
+![[assets/images/panorama/panorama_12-960x640.jpg]]
