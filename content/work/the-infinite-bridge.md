@@ -4,7 +4,7 @@ title: "The Infinite Bridge"
 featured: true
 home_order: 8
 summary: "multi-disciplinary live performance project connecting artists and creative professionals across remote locations."
-cover: "[[Attachments/theinfinitebridge/theinfinitebridge_02-1280x960.jpg]]"
+cover: "[[assets/images/theinfinitebridge/theinfinitebridge_02-1280x960.jpg]]"
 ---
 # The Infinite Bridge
 
@@ -33,18 +33,18 @@ Writer / Director [Peter Cox MBE](https://www.linkedin.com/in/peter-cox-mbe-b7a1
 
 ## Images
 
-![[Attachments/theinfinitebridge/theinfinitebridge_02-1280x960.jpg]]
+![[assets/images/theinfinitebridge/theinfinitebridge_02-1280x960.jpg]]
 
-![[Attachments/theinfinitebridge/theinfinitebridge_03-1280x960.jpg]]
+![[assets/images/theinfinitebridge/theinfinitebridge_03-1280x960.jpg]]
 
-![[Attachments/theinfinitebridge/theinfinitebridge_04-1280x960.jpg]]
+![[assets/images/theinfinitebridge/theinfinitebridge_04-1280x960.jpg]]
 
-![[Attachments/theinfinitebridge/theinfinitebridge_05-1280x960.jpg]]
+![[assets/images/theinfinitebridge/theinfinitebridge_05-1280x960.jpg]]
 
-![[Attachments/theinfinitebridge/theinfinitebridge_06-1280x960.jpg]]
+![[assets/images/theinfinitebridge/theinfinitebridge_06-1280x960.jpg]]
 
-![[Attachments/theinfinitebridge/theinfinitebridge_07-1280x854.jpg]]
+![[assets/images/theinfinitebridge/theinfinitebridge_07-1280x854.jpg]]
 
-![[Attachments/theinfinitebridge/theinfinitebridge_08-1280x720.jpg]]
+![[assets/images/theinfinitebridge/theinfinitebridge_08-1280x720.jpg]]
 
-![[Attachments/theinfinitebridge/theinfinitebridge_09-1280x720.jpg]]
+![[assets/images/theinfinitebridge/theinfinitebridge_09-1280x720.jpg]]
