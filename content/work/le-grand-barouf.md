@@ -1,7 +1,6 @@
 ---
 type: project
 title: "Le Grand Barouf"
-permalink: /work/le-grand-barouf
 featured: true
 home_order: 4
 summary: "artworks addressing the neutrality of the internet and data privacy"
