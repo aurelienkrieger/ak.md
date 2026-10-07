@@ -1,7 +1,6 @@
 ---
 type: project
 title: "The New Real"
-permalink: /work/the-new-real
 featured: false
 cover: "[[Attachments/thenewreal/thenewreal_03-1080x1021.jpg]]"
 ---
