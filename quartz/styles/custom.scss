@@ -261,6 +261,7 @@ body[data-slug="index"] article > p {
 body[data-slug="index"] article > h2,
 body[data-slug="about"] article > h2 {
   font-size: 1rem;
+  text-transform: lowercase;
   padding-bottom: 0.5rem;
   border-bottom: 1px dashed var(--ak-text);
   margin: 3rem 0 50px;
