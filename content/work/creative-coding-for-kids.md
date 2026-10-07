@@ -1,6 +1,7 @@
 ---
 type: project
 title: "Creative coding courses"
+image: assets/images/creativecoding/circuito_01-1080x720.jpg
 featured: false
 cover: "[[assets/images/creativecoding/circuito_02-1080x720.jpg]]"
 ---

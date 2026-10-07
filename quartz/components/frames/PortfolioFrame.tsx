@@ -20,8 +20,15 @@ export const PortfolioFrame: PageFrame = {
       return <Content {...props} tree={tree} />
     }
 
+    // Quartz's base stylesheet lays #quartz-body out as a 3-column grid
+    // (sidebar | content | sidebar) on screens wider than 800px. This frame has
+    // no sidebars, so it spans every column itself instead of relying on CSS
+    // overrides elsewhere to switch the grid off.
     return (
-      <div class="center">
+      <div
+        class="center portfolio-root"
+        style={{ gridColumn: "1 / -1", minWidth: 0, maxWidth: "none", margin: 0 }}
+      >
         <Header {...componentData} />
         <Body {...componentData} />
       </div>

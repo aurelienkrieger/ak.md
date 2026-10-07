@@ -1,6 +1,7 @@
 ---
 type: project
 title: "Yellow Lounge"
+image: assets/images/yellowlounge/LIGHTLINES_03-1024x576.jpg
 featured: false
 cover: "[[assets/images/yellowlounge/LIGHTLINES_01-1024x576.jpg]]"
 ---

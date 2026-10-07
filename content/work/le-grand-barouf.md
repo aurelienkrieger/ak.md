@@ -21,7 +21,7 @@ The Cached experience is an immersive narrative that reveals how computers have 
 - **Clients:** CCI Grand Lille, Métropole Européenne de Lille
 - **Produced by:** [OuiShare](https://www.ouishare.net/)
 - **Co-Curation:** Aurélien Krieger as [obsolete.studio](https://obsolete.studio)
-- **Artists:** [Fabien Zocco](https://www.fabienzocco.net/), [Cached Collective](https://cached.id/)
+- **Artists** [Fabien Zocco](https://www.fabienzocco.net/), [Cached Collective](https://cached.id/)
 
 ## Images
 

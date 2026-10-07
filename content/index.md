@@ -3,6 +3,11 @@ type: page
 nav: 1
 description: "Producer for art, education & cultural projects."
 image: assets/images/aurelienkrieger_com.jpg
+image_width: 688
+image_height: 689
+author: "Aurélien Krieger"
+keywords: "art, engineer, science, technology, education, culture"
+url: "https://www.aurelienkrieger.com"
 title: "Aurélien Krieger"
 ---
 # Aurélien Krieger
@@ -11,7 +16,7 @@ Cultural producer with a focus on multidisciplinary art & educational projects f
 
 Co-founder at [obsolete.studio](https://obsolete.studio).
 
-## Selected projects
+## selected projects
 
 - [Espaces Latents](https://obsolete.studio/en/portfolio/espaces-latents) — forum for collective learning and artistic emergence in Artificial Intelligence
 - [Ecologias da Água](https://obsolete.studio/en/portfolio/everyday-sounds-ecologia-da-agua) — art residency in rural areas and participatory activities for a sensitive relationship with the living world
@@ -22,7 +27,7 @@ Co-founder at [obsolete.studio](https://obsolete.studio).
 - [[work/dancedigital|dancedigital]] — framework for personal creativity and STEAM education using dance and digital interfaces
 - [[work/the-infinite-bridge|The Infinite Bridge]] — multi-disciplinary live performance project connecting artists and creative professionals across remote locations.
 
-## Workshops, talks & courses
+## workshops, talks & courses
 
 | Year | Activity |
 | --- | --- |

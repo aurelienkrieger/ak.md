@@ -1,6 +1,7 @@
 ---
 type: project
 title: "Meandering River"
+image: assets/images/meanderingriver/meandering_river_01-1024x576.jpg
 featured: true
 home_order: 5
 summary: "immersive audio-visual installation, algorithmic simulation of the rivers' oscillating behaviours"

@@ -1,6 +1,7 @@
 ---
 type: project
 title: "Color Piano"
+image: assets/images/colorpiano/masomenoslab_05-1024x576.jpg
 featured: false
 cover: "[[assets/images/colorpiano/masomenoslab_05-1024x576.jpg]]"
 ---

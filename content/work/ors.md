@@ -1,6 +1,7 @@
 ---
 type: project
 title: "O.R.S. (Orbital River Station)"
+image: assets/images/ORS/ORS_00-1024x683.jpg
 featured: true
 home_order: 3
 summary: "floating artwork raising awareness of our relationship with the Rhône river and flood management"
@@ -18,10 +19,10 @@ O.R.S. was presented to the public for the first time at the 2019 Avignon Festiv
 
 ## Credits
 
-- **Artists:** [HeHe](http://hehe.org/)
-- **Commissioned by:** DREAL Auvergne Rhône-Alpes et de l’Europe
-- **Produced by:** [Bipolar](https://www.bipolar-production.com/)
-- **Collaboration with:** [International Iberian Nanotechnology Laboratory](https://www.inl.int/)
+- **Artists** [HeHe](http://hehe.org/)
+- **Commissioned by** DREAL Auvergne Rhône-Alpes et de l’Europe
+- **Produced by** [Bipolar](https://www.bipolar-production.com/)
+- **Collaboration with** [International Iberian Nanotechnology Laboratory](https://www.inl.int/)
 
 ## Images
 

@@ -1,6 +1,7 @@
 ---
 type: project
 title: "London Electronic Orchestra"
+image: assets/images/londonelectronicorchestra/LEO_01-750x442.jpeg
 featured: false
 cover: "[[assets/images/londonelectronicorchestra/LEO_01-750x442.jpeg]]"
 ---

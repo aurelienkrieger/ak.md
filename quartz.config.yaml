@@ -12,12 +12,12 @@ configuration:
     - templates
     - .obsidian
   theme:
-    fontOrigin: googleFonts
-    cdnCaching: true
+    fontOrigin: local
+    cdnCaching: false
     typography:
-      header: Inter
-      body: Inter
-      code: IBM Plex Mono
+      header: Inter Regular
+      body: Inter Regular
+      code: monospace
     colors:
       lightMode:
         light: "#f5f5f5"

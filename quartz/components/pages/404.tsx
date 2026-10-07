@@ -1,9 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
-/**
- * 404 page, same markup as the original site's 404.html.
- * The script redirects wrongly-cased URLs (/About → /about) when the page exists.
- */
+/** 404 page, same markup as the original site's 404.html. */
 const NotFound: QuartzComponent = (_props: QuartzComponentProps) => {
   return (
     <article class="popover-hint">
@@ -19,21 +16,6 @@ const NotFound: QuartzComponent = (_props: QuartzComponentProps) => {
           </p>
         </section>
       </div>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-          if (typeof fetchData !== "undefined") {
-            fetchData.then(function(index) {
-              var pathname = window.location.pathname.replace(/^\\/+|\\/+$/g, "").replace(/\\.html$/, "").replace(/\\/index$/, "");
-              var lowered = pathname.toLowerCase();
-              if (lowered !== pathname && index[lowered] != null) {
-                window.location.replace("/" + lowered);
-              }
-            });
-          }
-          `,
-        }}
-      />
     </article>
   )
 }

@@ -11,7 +11,7 @@ My main focus is to support collaborative projects that explore contemporary iss
 
 Co-founder at [obsolete.studio](https://obsolete.studio).
 
-## Expertise
+## expertise
 
 ### Creative production
 
@@ -25,7 +25,7 @@ Design and facilitation of creative labs encouraging peer learning, critical mak
 
 Programming of cultural projets and participative activities that foster a dialogue between creators and audiences for imagination, creativity and critical thinking.
 
-## Selected clients & partners
+## selected clients & partners
 
 ### Artists & Creative studios
 
@@ -66,7 +66,7 @@ Programming of cultural projets and participative activities that foster a dialo
 - Nesta (London, UK)
 - V&A Museum (London, UK)
 
-## Academic background
+## academic background
 
 | Years | Training |
 | --- | --- |

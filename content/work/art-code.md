@@ -1,6 +1,7 @@
 ---
 type: project
 title: "Art + Code"
+image: assets/images/artcode/artcode_00-1024x683.jpg
 featured: false
 cover: "[[assets/images/artcode/artcode_01-1024x683.jpg]]"
 ---

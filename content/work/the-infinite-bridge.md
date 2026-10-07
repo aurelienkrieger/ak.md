@@ -1,6 +1,7 @@
 ---
 type: project
 title: "The Infinite Bridge"
+image: assets/images/theinfinitebridge/theinfinitebridge_07-1280x854.jpg
 featured: true
 home_order: 8
 summary: "multi-disciplinary live performance project connecting artists and creative professionals across remote locations."

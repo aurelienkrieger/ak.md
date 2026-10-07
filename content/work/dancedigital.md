@@ -1,6 +1,7 @@
 ---
 type: project
 title: "dancedigital"
+image: assets/images/dancedigital/FutureNetwork_05-894x544.jpg
 featured: true
 home_order: 7
 summary: "framework for personal creativity and STEAM education using dance and digital interfaces"

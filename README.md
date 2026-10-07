@@ -24,17 +24,19 @@ nav: 2                  # shows up in the menu, ordered by this number
 
 Intro paragraphs.       ← the intro block
 
-## A section            ← section with a dashed title
+## a section            ← section with a dashed title (displayed exactly as written)
 
-### Column A            ← 2+ "###" in a section → columns
+### Column A            ← one or more "###" in a section → columns
 Text or a list.
 ```
 
 - Menu label = file name (`about`). Override with `nav_label: "…"`.
 - A Markdown table is the "year | text" list. Keep the header row (it is hidden); leave the
   year cell empty to continue the previous year. Use a single `<br>` for a line break in a cell.
-- Site description and social image: `description:` and `image:` in `content/index.md`
-  (any page can override them).
+- Site-wide metadata lives in the frontmatter of `content/index.md`: `description`, `image`
+  (+ `image_width` / `image_height`), `author`, `keywords` and `url` (used for `og:url`).
+  A page can override `description`, `image`, `author` and `keywords` in its own frontmatter.
+  Image dimensions default to the "-1024x683" suffix of the image file name.
 
 ### Projects (`content/work/*.md`)
 
@@ -49,7 +51,7 @@ Paragraphs…
 > Quotes are rendered in italics.
 
 ## Credits
-- **Artists:** [HeHe](http://hehe.org/)
+- **Artists** [HeHe](http://hehe.org/)       ← the label is shown as written ("Artists" or "Artists:")
 - **Produced by:** Bipolar
 
 ## Images
@@ -69,5 +71,5 @@ To list a project on the home page, add a link in `content/index.md`: `[[work/or
 | `quartz/components/frames/PortfolioFrame.tsx` | Page frame: header + restructured body |
 | `quartz/components/Header.tsx` | Logo, menu built from `nav:` frontmatter, mobile burger |
 | `quartz/components/pages/404.tsx` | 404 page |
-| `quartz/components/Head.tsx` | Title (`Aurélien Krieger - Page`), description, social image |
+| `quartz/components/Head.tsx` | Title (`Aurélien Krieger - Page`), description, keywords, author, canonical, social image |
 | `quartz/styles/custom.scss` | Transcription of the original CSS |
