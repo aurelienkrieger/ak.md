@@ -2,7 +2,7 @@
 type: project
 title: "Residuum"
 featured: false
-cover: "[[Attachments/residuum/residuum_01-1280x720.jpg]]"
+cover: "[[assets/images/residuum/residuum_01-1280x720.jpg]]"
 ---
 # Residuum
 
@@ -17,18 +17,18 @@ Residuum is a light art installation created by Paul Marlier and exhibited in Au
 
 ## Images
 
-![[Attachments/residuum/residuum_01-1280x720.jpg]]
+![[assets/images/residuum/residuum_01-1280x720.jpg]]
 
 *Photo credit: Paul Marlier*
 
-![[Attachments/residuum/residuum_02-1280x720.jpg]]
+![[assets/images/residuum/residuum_02-1280x720.jpg]]
 
 *Photo credit: Paul Marlier*
 
-![[Attachments/residuum/residuum_03-1280x720.jpg]]
+![[assets/images/residuum/residuum_03-1280x720.jpg]]
 
 *Photo credit: Paul Marlier*
 
-![[Attachments/residuum/residuum_04-1280x720.jpg]]
+![[assets/images/residuum/residuum_04-1280x720.jpg]]
 
 *Photo credit: Paul Marlier*
