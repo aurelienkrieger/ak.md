@@ -1,9 +1,8 @@
 ---
 type: page
 title: "Aurélien Krieger"
-slug: ""
+permalink: /
 ---
-
 # Aurélien Krieger
 
 Cultural producer with a focus on multidisciplinary art & educational projects fostering a dialogue between creators and audiences.
@@ -14,12 +13,12 @@ Co-founder at [obsolete.studio](https://obsolete.studio).
 
 - [Espaces Latents](https://obsolete.studio/en/portfolio/espaces-latents) — forum for collective learning and artistic emergence in Artificial Intelligence
 - [Ecologias da Água](https://obsolete.studio/en/portfolio/everyday-sounds-ecologia-da-agua) — art residency in rural areas and participatory activities for a sensitive relationship with the living world
-- [[Projects/ors|ORS]] — floating artwork raising awareness of our relationship with the Rhône river and flood management
-- [[Projects/le-grand-barouf|Le Grand Barouf]] — artworks addressing the neutrality of the internet and data privacy
-- [[Projects/meandering-river|Meandering River]] — immersive audio-visual installation, algorithmic simulation of the rivers' oscillating behaviours
-- [[Projects/panorama|PANORAMA]] — series of independent art events featuring film screenings, performances, visual art and new media art
-- [[Projects/dancedigital|dancedigital]] — framework for personal creativity and STEAM education using dance and digital interfaces
-- [[Projects/the-infinite-bridge|The Infinite Bridge]] — multi-disciplinary live performance project connecting artists and creative professionals across remote locations.
+- [[work/ors|ORS]] — floating artwork raising awareness of our relationship with the Rhône river and flood management
+- [[work/le-grand-barouf|Le Grand Barouf]] — artworks addressing the neutrality of the internet and data privacy
+- [[work/meandering-river|Meandering River]] — immersive audio-visual installation, algorithmic simulation of the rivers' oscillating behaviours
+- [[work/panorama|PANORAMA]] — series of independent art events featuring film screenings, performances, visual art and new media art
+- [[work/dancedigital|dancedigital]] — framework for personal creativity and STEAM education using dance and digital interfaces
+- [[work/the-infinite-bridge|The Infinite Bridge]] — multi-disciplinary live performance project connecting artists and creative professionals across remote locations.
 
 ## Workshops, talks & courses
 
