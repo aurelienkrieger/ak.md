@@ -10,6 +10,15 @@ const imageMime = (path: string): string => {
   return ext === "jpg" ? "jpeg" : ext
 }
 
+/** "[[assets/images/a.jpg]]" (Obsidian link) or "assets/images/a.jpg" → "assets/images/a.jpg" */
+const imagePath = (value: unknown): string =>
+  String(value ?? "")
+    .trim()
+    .replace(/^!?\[\[/, "")
+    .replace(/\]\]$/, "")
+    .split("|")[0]
+    .replace(/^\/+/, "")
+
 export default (() => {
   const Head: QuartzComponent = ({
     cfg,
@@ -52,11 +61,9 @@ export default (() => {
     // `image_width` / `image_height`, else from a "-1024x683" suffix in the file name.
     const usesCustomOgImage = ctx.cfg.plugins.emitters.some((e) => e.name === "CustomOgImages")
     const imageSource = fileData.frontmatter?.image ? fileData.frontmatter : home
-    const ogImage = imageSource?.image
-    const ogImageDefaultPath = ogImage
-      ? `https://${cfg.baseUrl}/${String(ogImage).replace(/^\/+/, "")}`
-      : undefined
-    const fromName = String(ogImage ?? "").match(/(\d+)[x×](\d+)/)
+    const ogImage = imagePath(imageSource?.image)
+    const ogImageDefaultPath = ogImage ? `https://${cfg.baseUrl}/${ogImage}` : undefined
+    const fromName = ogImage.match(/(\d+)[x×](\d+)/)
     const imageWidth = imageSource?.image_width ?? fromName?.[1]
     const imageHeight = imageSource?.image_height ?? fromName?.[2]
 
