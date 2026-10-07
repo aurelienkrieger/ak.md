@@ -90,9 +90,10 @@ function prepareAboutPage() {
   const article = document.querySelector("article")
   if (!article || article.dataset.prepared === "true") return
 
-  const expertise = article.querySelector(":scope > #expertise")
-  const clients = article.querySelector(":scope > #selected-clients--partners")
-  const academic = article.querySelector(":scope > #academic-background")
+  const sectionHeadings = Array.from(article.querySelectorAll(":scope > h2"))
+  const expertise = sectionHeadings.find((el) => el.textContent?.trim().toLowerCase() === "expertise")
+  const clients = sectionHeadings.find((el) => el.textContent?.trim().toLowerCase().startsWith("selected clients"))
+  const academic = sectionHeadings.find((el) => el.textContent?.trim().toLowerCase() === "academic background")
 
   function makeGrid(start, end, gridClass, itemClass) {
     if (!start) return
