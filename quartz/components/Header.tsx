@@ -17,7 +17,7 @@ const Header: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
         <a id="link_contact" class={slug === "contact" ? "active" : ""} href="/contact">contact</a>
       </div>
 
-      <div class="togglenav" role="button" tabindex={0} aria-label="Toggle navigation">
+      <div class="togglenav" role="button" tabIndex={0} aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
