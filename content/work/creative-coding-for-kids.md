@@ -1,7 +1,6 @@
 ---
 type: project
 title: "Creative coding courses"
-permalink: /work/creative-coding-for-kids
 featured: false
 cover: "[[Attachments/creativecoding/circuito_02-1080x720.jpg]]"
 ---
