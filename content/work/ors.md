@@ -1,14 +1,12 @@
 ---
 type: project
 title: "O.R.S. (Orbital River Station)"
-slug: "ors"
+permalink: /work/ors
 featured: true
 home_order: 3
 summary: "floating artwork raising awareness of our relationship with the Rhône river and flood management"
 cover: "[[Attachments/ORS/ORS_01-1024x671.jpg]]"
-original_path: "/work/ors"
 ---
-
 # O.R.S. (Orbital River Station)
 
 Since 2010, Bipolar Production has been working alongside artists who are sensitive to contemporary environmental and scientific issues.

@@ -1,12 +1,10 @@
 ---
 type: project
 title: "Yellow Lounge"
-slug: "yellow-lounge"
+permalink: /work/yellow-lounge
 featured: false
 cover: "[[Attachments/yellowlounge/LIGHTLINES_01-1024x576.jpg]]"
-original_path: "/work/yellow-lounge"
 ---
-
 # Yellow Lounge
 
 [Yellow Lounge](https://www.yellowlounge.com/) was born in the Berlin club scene to introduce a new idea of classical music accessible by everyone. During these unique live concerts, classical music meets VJ performances in urban spaces and night clubs.

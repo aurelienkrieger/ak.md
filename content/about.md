@@ -1,9 +1,8 @@
 ---
 type: page
 title: "About"
-slug: "about"
+permalink: /about
 ---
-
 # About
 
 Production manager for art, education and cultural projects with over 10 years of international experience. I develop and coordinate residencies, exhibitions, performances, workshops and other participatory formats.

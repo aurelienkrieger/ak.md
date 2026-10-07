@@ -1,12 +1,10 @@
 ---
 type: project
 title: "Color Piano"
-slug: "color-piano"
+permalink: /work/color-piano
 featured: false
 cover: "[[Attachments/colorpiano/masomenoslab_05-1024x576.jpg]]"
-original_path: "/work/color-piano"
 ---
-
 # Color Piano
 
 Masomenos Lab is a project initiated by [masomenos](https://masomenos.fr/) with the aim to explore the symbiosis between music, video, light and live performance through the development of interactive artworks.

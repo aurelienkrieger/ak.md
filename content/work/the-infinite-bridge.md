@@ -1,14 +1,12 @@
 ---
 type: project
 title: "The Infinite Bridge"
-slug: "the-infinite-bridge"
+permalink: /work/the-infinite-bridge
 featured: true
 home_order: 8
 summary: "multi-disciplinary live performance project connecting artists and creative professionals across remote locations."
 cover: "[[Attachments/theinfinitebridge/theinfinitebridge_02-1280x960.jpg]]"
-original_path: "/work/the-infinite-bridge"
 ---
-
 # The Infinite Bridge
 
 The Infinite Bridge is a multi-disciplinary live performance project connecting artists and creative professionals across cultures and practices.

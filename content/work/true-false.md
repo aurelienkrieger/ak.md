@@ -1,12 +1,10 @@
 ---
 type: project
 title: "true/false"
-slug: "true-false"
+permalink: /work/true-false
 featured: false
 cover: "[[Attachments/truefalse/truefalse_03-1024x576.jpg]]"
-original_path: "/work/true-false"
 ---
-
 # true/false
 
 true/false is a kinetic sculpture by onformative, composed of arrays of circular black metal segments set in mechanical columns. Interlocking and rotating around fluorescent light tubes, the cylinders cover or expose the light to display an endless number of patterns.

@@ -1,12 +1,10 @@
 ---
 type: project
 title: "Art + Code"
-slug: "art-code"
+permalink: /work/art-code
 featured: false
 cover: "[[Attachments/artcode/artcode_01-1024x683.jpg]]"
-original_path: "/work/art-code"
 ---
-
 # Art + Code
 
 With [obsolete.studio](https://obsolete.studio/) we were invited by [42Lisboa](https://www.42lisboa.com/en/) to organise a participatory conference on the theme of Art and Code.

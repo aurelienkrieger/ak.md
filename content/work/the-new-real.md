@@ -1,12 +1,10 @@
 ---
 type: project
 title: "The New Real"
-slug: "the-new-real"
+permalink: /work/the-new-real
 featured: false
 cover: "[[Attachments/thenewreal/thenewreal_03-1080x1021.jpg]]"
-original_path: "/work/the-new-real"
 ---
-
 # The New Real
 
 [The New Real](https://www.newreal.cc/) is a partnership between [the University of Edinburgh](https://www.ed.ac.uk/), [Alan Turing Institute](https://www.turing.ac.uk/) and [Edinburgh’s Festivals](https://www.edinburghfestivalcity.com/) that explores how art and creativity can help to radically change how we think about AI design.

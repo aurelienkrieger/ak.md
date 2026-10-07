@@ -1,12 +1,10 @@
 ---
 type: project
 title: "Creative coding courses"
-slug: "creative-coding-for-kids"
+permalink: /work/creative-coding-for-kids
 featured: false
 cover: "[[Attachments/creativecoding/circuito_02-1080x720.jpg]]"
-original_path: "/work/creative-coding-for-kids"
 ---
-
 # Creative coding courses
 
 Since 2014 I regularly run workshops & courses to help young people to explore and experiment with code & technologies by developing fun & creative projects such as:

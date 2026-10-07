@@ -1,14 +1,12 @@
 ---
 type: project
 title: "Le Grand Barouf"
-slug: "le-grand-barouf"
+permalink: /work/le-grand-barouf
 featured: true
 home_order: 4
 summary: "artworks addressing the neutrality of the internet and data privacy"
 cover: "[[Attachments/legrandbarouf/legrandbarouf_02-768x576.jpg]]"
-original_path: "/work/le-grand-barouf"
 ---
-
 # Le Grand Barouf
 
 Le Grand Barouf Numérique is a participatory and prospective event that opens the debate on the issue of our digital lives.

@@ -1,14 +1,12 @@
 ---
 type: project
 title: "PANORAMA"
-slug: "panorama"
+permalink: /work/panorama
 featured: true
 home_order: 6
 summary: "series of independent art events featuring film screenings, performances, visual art and new media art"
 cover: "[[Attachments/panorama/panorama_01-960x640.jpg]]"
-original_path: "/work/panorama"
 ---
-
 # PANORAMA
 
 PANORAMA was an independent art programme hosted by [Genesis Cinema](https://genesiscinema.co.uk/), the home of independent film in East London, to offer a platform for emerging artists to exhibit and discuss their work, develop new networks and get inspired.

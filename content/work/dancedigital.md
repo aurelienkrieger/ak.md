@@ -1,14 +1,12 @@
 ---
 type: project
 title: "dancedigital"
-slug: "dancedigital"
+permalink: /work/dancedigital
 featured: true
 home_order: 7
 summary: "framework for personal creativity and STEAM education using dance and digital interfaces"
 cover: "[[Attachments/dancedigital/FutureNetwork_02-1024x577.jpg]]"
-original_path: "/work/dancedigital"
 ---
-
 # dancedigital
 
 FutureNetwork & formXtended are the two phases of a project initiated by  [dancedigital](https://www.linkedin.com/company/dancedigital/), a UK-based organisation which aims to serve as a hub for creative development and exchange in digital dance practices.

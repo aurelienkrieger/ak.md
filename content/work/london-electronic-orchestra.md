@@ -1,12 +1,10 @@
 ---
 type: project
 title: "London Electronic Orchestra"
-slug: "london-electronic-orchestra"
+permalink: /work/london-electronic-orchestra
 featured: false
 cover: "[[Attachments/londonelectronicorchestra/LEO_01-750x442.jpeg]]"
-original_path: "/work/london-electronic-orchestra"
 ---
-
 # London Electronic Orchestra
 
 Formed in 2013, the London Electronic Orchestra is a project by [Kate Simko](https://www.katesimko.com/) that meshes the lush textures of classical instruments with the rhythms and soundscapes of electronic music.

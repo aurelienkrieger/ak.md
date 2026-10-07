@@ -1,12 +1,10 @@
 ---
 type: project
 title: "Web development & Digital culture"
-slug: "simplon-co"
+permalink: /work/simplon-co
 featured: false
 cover: "[[Attachments/simplon/simplon_01-1080x810.jpg]]"
-original_path: "/work/simplon-co"
 ---
-
 # Web development & Digital culture
 
 [Simplon.co](https://simplon.co/) is a digital school that aims for a positive social impact. They provide courses in technical digital skills with the goal to enable those who struggle to access training and/or the job market to find a job or become an entrepreneur.
