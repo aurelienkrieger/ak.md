@@ -50,20 +50,22 @@ plugins:
 
   - source: "@quartz-community/github-flavored-markdown"
     enabled: true
+    options:
+      linkHeadings: false
     order: 40
 
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
       markdownLinkResolution: shortest
+      openLinksInNewTab: true
+      externalLinkIcon: false
     order: 60
 
   - source: "@quartz-community/description"
     enabled: true
     order: 70
 
-  - source: "@quartz-community/quartz-fonts"
-    enabled: true
 
   - source: "@quartz-community/remove-draft"
     enabled: true
