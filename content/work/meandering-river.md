@@ -4,7 +4,7 @@ title: "Meandering River"
 featured: true
 home_order: 5
 summary: "immersive audio-visual installation, algorithmic simulation of the rivers' oscillating behaviours"
-cover: "[[Attachments/meanderingriver/meandering_river_01-1024x576.jpg]]"
+cover: "[[assets/images/meanderingriver/meandering_river_01-1024x576.jpg]]"
 ---
 # Meandering River
 
@@ -27,18 +27,18 @@ At the time of the project I was working as a team member of onformative in the 
 
 ## Images
 
-![[Attachments/meanderingriver/meandering_river_01-1024x576.jpg]]
+![[assets/images/meanderingriver/meandering_river_01-1024x576.jpg]]
 
 *Photo credit: onformative*
 
-![[Attachments/meanderingriver/meandering_river_03-1024x576.jpg]]
+![[assets/images/meanderingriver/meandering_river_03-1024x576.jpg]]
 
 *Photo credit: onformative*
 
-![[Attachments/meanderingriver/meandering_river_04-1024x576.jpg]]
+![[assets/images/meanderingriver/meandering_river_04-1024x576.jpg]]
 
 *Photo credit: onformative*
 
-![[Attachments/meanderingriver/meandering_river_09-1024x576.jpg]]
+![[assets/images/meanderingriver/meandering_river_09-1024x576.jpg]]
 
 *Photo credit: onformative*
