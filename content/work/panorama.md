@@ -1,7 +1,6 @@
 ---
 type: project
 title: "PANORAMA"
-permalink: /work/panorama
 featured: true
 home_order: 6
 summary: "series of independent art events featuring film screenings, performances, visual art and new media art"
