@@ -1,9 +1,15 @@
-# Dependencies and Quartz caches
+# Dependencies
 node_modules/
+
+# Quartz caches
 .quartz/
+quartz/.quartz-cache/
 
 # Build output
 public/
+
+# TypeScript
+*.tsbuildinfo
 
 # macOS
 .DS_Store
