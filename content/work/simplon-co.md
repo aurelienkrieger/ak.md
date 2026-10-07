@@ -2,7 +2,7 @@
 type: project
 title: "Web development & Digital culture"
 featured: false
-cover: "[[Attachments/simplon/simplon_01-1080x810.jpg]]"
+cover: "[[assets/images/simplon/simplon_01-1080x810.jpg]]"
 ---
 # Web development & Digital culture
 
@@ -14,6 +14,6 @@ I also use the opportunity to expand the scope of their skills, to help them to 
 
 ## Images
 
-![[Attachments/simplon/simplon_01-1080x810.jpg]]
+![[assets/images/simplon/simplon_01-1080x810.jpg]]
 
 *Photo credit: Simplon Marseille*

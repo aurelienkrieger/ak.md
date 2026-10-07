@@ -4,7 +4,7 @@ title: "Le Grand Barouf"
 featured: true
 home_order: 4
 summary: "artworks addressing the neutrality of the internet and data privacy"
-cover: "[[Attachments/legrandbarouf/legrandbarouf_02-768x576.jpg]]"
+cover: "[[assets/images/legrandbarouf/legrandbarouf_02-768x576.jpg]]"
 ---
 # Le Grand Barouf
 
@@ -25,18 +25,18 @@ The Cached experience is an immersive narrative that reveals how computers have 
 
 ## Images
 
-![[Attachments/legrandbarouf/legrandbarouf_02-768x576.jpg]]
+![[assets/images/legrandbarouf/legrandbarouf_02-768x576.jpg]]
 
 *Photo credit: Ouishare*
 
-![[Attachments/legrandbarouf/legrandbarouf_05-768x402.jpg]]
+![[assets/images/legrandbarouf/legrandbarouf_05-768x402.jpg]]
 
 *Photo credit: Ouishare*
 
-![[Attachments/legrandbarouf/legrandbarouf_06-1024x900.jpg]]
+![[assets/images/legrandbarouf/legrandbarouf_06-1024x900.jpg]]
 
 *Photo credit: Cached*
 
-![[Attachments/legrandbarouf/legrandbarouf_07-1024x683.jpg]]
+![[assets/images/legrandbarouf/legrandbarouf_07-1024x683.jpg]]
 
 *Photo credit: Cached*

@@ -2,7 +2,7 @@
 type: project
 title: "Art + Code"
 featured: false
-cover: "[[Attachments/artcode/artcode_01-1024x683.jpg]]"
+cover: "[[assets/images/artcode/artcode_01-1024x683.jpg]]"
 ---
 # Art + Code
 
@@ -19,14 +19,14 @@ For the occasion, we have invited several artists whose practice lies at the cro
 
 ## Images
 
-![[Attachments/artcode/artcode_01-1024x683.jpg]]
+![[assets/images/artcode/artcode_01-1024x683.jpg]]
 
 *Photo credit: 42Lisboa*
 
-![[Attachments/artcode/artcode_02-1024x683.jpg]]
+![[assets/images/artcode/artcode_02-1024x683.jpg]]
 
 *Photo credit: 42Lisboa*
 
-![[Attachments/artcode/artcode_00-1024x683.jpg]]
+![[assets/images/artcode/artcode_00-1024x683.jpg]]
 
 *Photo credit: 42Lisboa*

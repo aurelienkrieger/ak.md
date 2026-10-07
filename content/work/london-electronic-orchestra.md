@@ -2,7 +2,7 @@
 type: project
 title: "London Electronic Orchestra"
 featured: false
-cover: "[[Attachments/londonelectronicorchestra/LEO_01-750x442.jpeg]]"
+cover: "[[assets/images/londonelectronicorchestra/LEO_01-750x442.jpeg]]"
 ---
 # London Electronic Orchestra
 
@@ -26,14 +26,14 @@ The visual system was orchestrated by a custom software that I developed as part
 
 ## Images
 
-![[Attachments/londonelectronicorchestra/LEO_01-750x442.jpeg]]
+![[assets/images/londonelectronicorchestra/LEO_01-750x442.jpeg]]
 
 *Photo credit: Kate Simko / masomenos*
 
-![[Attachments/londonelectronicorchestra/LEO_02-750x500.jpeg]]
+![[assets/images/londonelectronicorchestra/LEO_02-750x500.jpeg]]
 
 *Photo credit: Kate Simko / masomenos*
 
-![[Attachments/londonelectronicorchestra/LEO_03-750x500.jpeg]]
+![[assets/images/londonelectronicorchestra/LEO_03-750x500.jpeg]]
 
 *Photo credit: Kate Simko / masomenos*
