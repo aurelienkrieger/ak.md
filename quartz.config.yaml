@@ -41,6 +41,20 @@ configuration:
         textHighlight: "#d7691e"
 
 plugins:
+  - source: "@quartz-community/note-properties"
+    enabled: true
+    options:
+      includeAll: false
+      includedProperties:
+        - description
+        - tags
+        - aliases
+      excludedProperties: []
+      hidePropertiesView: true
+      delimiters: ---
+      language: yaml
+    order: 5
+
   - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
     options:

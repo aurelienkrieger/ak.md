@@ -1,29 +1,36 @@
 @use "./variables.scss" as *;
 
 :root {
-  --ak-bg: #f5f5f5;
-  --ak-text: #141414;
-  --ak-accent: #d7691e;
+  --bg-color: #f5f5f5;
+  --text-color: #141414;
+  --accent-color: #d7691e;
+  --accent2-color: #d7691e;
 }
 
+/*
+ * Portfolio styles intentionally mirror the original static site's CSS.
+ * Quartz is kept as the renderer; its generic visual chrome is neutralized here.
+ */
+
 html {
-  background: var(--ak-bg);
+  background-color: var(--bg-color);
 }
 
 body {
-  margin: 0;
-  background: var(--ak-bg);
-  color: var(--ak-text);
+  max-width: 1920px;
+  padding: 2em 3em;
+  margin: auto;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: "Inter", sans-serif;
   font-weight: 400;
   overflow-x: hidden;
 }
 
 #quartz-root.page {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 2em 3em;
-  box-sizing: border-box;
+  max-width: none;
+  margin: 0;
+  padding: 0;
 }
 
 .page[data-frame="full-width"] > #quartz-body {
@@ -47,148 +54,93 @@ body {
   display: none;
 }
 
-/* Header */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  gap: 2rem;
-}
-
-.site-logo {
-  display: block;
-  width: 110px;
-  line-height: 0;
-}
-
-.site-logo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  border-radius: 0;
-  filter: invert(1);
-}
-
-.site-nav {
-  margin-left: auto;
-}
-
-.site-nav a {
-  color: var(--ak-text);
-  font-weight: 400;
-  text-decoration: none;
-}
-
-.site-nav-desktop {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-}
-
-.site-nav a:hover,
-.site-nav a.active {
-  color: var(--ak-accent);
-}
-
-.site-nav-mobile {
-  display: none;
-  margin-left: auto;
-  position: relative;
-}
-
-.site-nav-mobile summary {
-  display: block;
-  width: 20px;
-  cursor: pointer;
-  list-style: none;
-}
-
-.site-nav-mobile summary::-webkit-details-marker {
-  display: none;
-}
-
-.site-nav-mobile summary span {
-  display: block;
-  width: 20px;
-  height: 2px;
-  margin-bottom: 5px;
-  background: var(--ak-text);
-}
-
-.site-nav-mobile nav {
-  position: absolute;
-  right: 0;
-  top: 30px;
-  z-index: 20;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.4rem;
-  padding: 0.5rem 0;
-  background: var(--ak-bg);
-  line-height: 1.4rem;
-}
-
-.site-header-extras {
-  display: none;
-}
-
-/* Global typography */
 article {
-  color: var(--ak-text);
-}
-
-article p,
-article li,
-article td,
-article th {
-  color: var(--ak-text);
-  line-height: 1.4;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  color: var(--text-color);
 }
 
 article > h1:first-child {
-  margin-top: 0;
-}
-
-article h1,
-article h2,
-article h3,
-article h4,
-article h5,
-article h6 {
-  color: var(--ak-text);
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-}
-
-article h1 a[role="anchor"],
-article h2 a[role="anchor"],
-article h3 a[role="anchor"],
-article h4 a[role="anchor"],
-article h5 a[role="anchor"],
-article h6 a[role="anchor"] {
   display: none;
 }
 
+/* Restore the simple browser-like typography used by the original site. */
+p,
+li,
+td,
+th {
+  color: var(--text-color);
+  line-height: normal;
+}
+
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--text-color);
+  margin-block-start: 0.67em;
+  margin-block-end: 50px;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h1 a[role="anchor"],
+h2 a[role="anchor"],
+h3 a[role="anchor"],
+h4 a[role="anchor"],
+h5 a[role="anchor"],
+h6 a[role="anchor"] {
+  display: none;
+}
+
+::selection {
+  background-color: var(--accent2-color);
+  color: var(--bg-color);
+}
+
+a,
 article a,
 article a.internal,
 article a.external {
-  color: var(--ak-accent);
+  color: var(--accent-color);
+  font-weight: inherit;
   background: transparent;
   border-radius: 0;
   padding: 0;
-  font-weight: 400;
-  text-decoration: underline;
   line-height: inherit;
 }
 
 article a:hover,
 article a.internal:hover,
 article a.external:hover {
-  color: var(--ak-bg);
-  background: var(--ak-accent);
+  color: var(--bg-color);
+  background-color: var(--accent-color);
   text-decoration: none;
   font-style: italic;
 }
@@ -197,285 +149,275 @@ article a.external .external-icon {
   display: none;
 }
 
-::selection {
-  background: var(--ak-accent);
-  color: var(--ak-bg);
+/* Header — same dimensions and spacing as the original HTML site. */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-article img {
+#logo {
+  width: 110px;
+  padding: 0;
+  margin: 0;
+}
+
+#logo a {
+  display: block;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 0.74rem;
+}
+
+#logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+  filter: invert(1);
+}
+
+.topnav {
+  margin: 0;
+  padding: 0;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 0 0 0 2.5rem;
+  text-align: right;
+}
+
+.topnav a:hover,
+.topnav a.active {
+  color: var(--accent-color);
+}
+
+.togglenav {
+  display: none;
+}
+
+.togglenav span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 5px;
+  background: var(--text-color);
+}
+
+/* Shared content blocks from the original site. */
+#intro {
+  max-width: 600px;
+  margin: 3rem 0;
+}
+
+.about_section {
+  max-width: 900px;
+  margin: 3rem 0;
+  line-height: 140%;
+}
+
+.about_section li,
+.about_section p,
+.about_section td {
+  line-height: 140%;
+}
+
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+td {
+  padding-right: 1rem;
+  vertical-align: top;
+}
+
+/* Quartz wraps Markdown tables; neutralize its table presentation. */
+.table-container {
+  overflow: visible;
+}
+
+.table-container > table {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+table thead {
+  display: none;
+}
+
+tr {
+  border: 0;
+}
+
+th,
+td {
+  min-width: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+}
+
+/* About */
+#expertise {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 6rem;
+}
+
+#clients {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+}
+
+#clients ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Contact */
+body[data-slug="contact"] #intro ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 140%;
+}
+
+body[data-slug="contact"] #intro li {
+  line-height: 140%;
+}
+
+/* Project pages — direct transcription of project.css. */
+body[data-slug^="work/"] {
+  overflow-y: hidden;
+}
+
+body[data-slug^="work/"] h2 {
+  margin-top: 0;
+}
+
+body[data-slug^="work/"] article img {
   max-width: 100%;
   height: auto;
   margin: 0;
   border-radius: 0;
 }
 
-article ul {
-  padding-left: 1.25rem;
-}
-
-article table {
-  width: auto;
-  border-collapse: collapse;
-}
-
-.table-container {
-  overflow: visible;
-}
-
-.table-container > table {
-  margin: 0;
+body[data-slug^="work/"] figure {
   padding: 0;
+  margin: auto;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
-article tr {
-  border: 0;
-}
-
-article td,
-article th {
-  min-width: 0;
-  padding: 0 1rem 0.35rem 0;
-  vertical-align: top;
-}
-
-article th {
-  border: 0;
-  font-weight: 400;
-}
-
-/* Home */
-body[data-slug="index"] article {
-  max-width: 900px;
-  margin-top: 3rem;
-}
-
-body[data-slug="index"] article > h1:first-child {
-  display: none;
-}
-
-body[data-slug="index"] article > p {
-  max-width: 600px;
-  margin: 0 0 1.2rem;
-}
-
-body[data-slug="index"] article > h2,
-body[data-slug="about"] article > h2 {
-  font-size: 1rem;
-  text-transform: lowercase;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px dashed var(--ak-text);
-  margin: 3rem 0 50px;
-}
-
-body[data-slug="index"] article > ul {
-  margin-bottom: 3rem;
-}
-
-/* About */
-body[data-slug="about"] article {
-  max-width: 900px;
-  margin-top: 3rem;
-}
-
-body[data-slug="about"] article > h1:first-child {
-  display: none;
-}
-
-body[data-slug="about"] article > p {
-  max-width: 600px;
-}
-
-.expertise-grid,
-.clients-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem;
-}
-
-.expertise-grid {
-  column-gap: 6rem;
-}
-
-.expertise-item h3,
-.clients-item h3 {
-  margin: 0 0 1rem;
-  font-size: 1.1rem;
-}
-
-.expertise-item p {
-  margin: 0;
-}
-
-.clients-item ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-/* Contact */
-body[data-slug="contact"] article {
-  max-width: 600px;
-  margin-top: 3rem;
-}
-
-body[data-slug="contact"] article > h1:first-child {
-  display: none;
-}
-
-body[data-slug="contact"] article ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-/* Project pages */
-body[data-slug^="work/"] {
-  overflow-y: hidden;
-}
-
-body[data-slug^="work/"] article {
-  width: 100%;
-  max-width: none;
-}
-
-.project-layout {
+.container {
   display: flex;
   height: calc(100vh - 100px - 6em);
-  margin: 2rem 0 0;
+  margin: 2rem 0;
   gap: 3rem;
 }
 
-.project-description,
-.project-images {
+.content {
   width: 50%;
   min-width: 0;
 }
 
-.project-description {
+.description {
   overflow-y: auto;
-  padding-right: 0.5rem;
 }
 
-.project-description > h1:first-child {
-  font-size: 1.1rem;
-  line-height: 1.3;
-  margin: 0 0 1rem;
-}
-
-.project-description > #credits {
-  display: none;
-}
-
-.project-description > #credits + ul {
-  list-style: none;
-  padding: 0;
+.credits {
   margin-top: 2rem;
 }
 
-.project-description > #credits + ul li {
-  margin-bottom: 0.35rem;
-}
-
-.project-images {
-  overflow-y: auto;
-  text-align: right;
-  scrollbar-width: thin;
-}
-
-.project-images figure {
+.credits,
+.credits ul {
+  list-style: none;
   padding: 0;
-  margin: 0 0 1rem;
 }
 
-.project-images img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
+.images {
+  overflow-y: scroll;
+  text-align: end;
 }
 
-.project-images figcaption {
-  margin-top: 0.25rem;
-  font-size: 0.9rem;
-  line-height: 1.3;
+.images figcaption {
+  line-height: normal;
 }
 
-/* 404 */
-body[data-slug="404"] article {
-  max-width: 600px;
-  margin-top: 3rem;
-}
-
-/* Responsive */
+/* Original responsive rules. */
 @media screen and (max-width: 1000px) {
-  .expertise-grid,
-  .clients-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  #expertise {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .expertise-grid {
-    column-gap: 2rem;
+  #expertise div {
+    margin: 0;
+    max-width: 700px;
+  }
+
+  #clients {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 2rem;
   }
 }
 
 @media screen and (max-width: 900px) {
   body[data-slug^="work/"] {
-    overflow-y: auto;
+    overflow-y: scroll;
   }
 
-  .project-layout {
+  .container {
     flex-direction: column-reverse;
-    height: auto;
+    height: 100%;
     gap: 1rem;
   }
 
-  .project-description,
-  .project-images {
+  .content {
     width: 100%;
-    overflow: visible;
-    padding: 0;
   }
 
-  .project-images {
+  .images {
     display: flex;
     gap: 1rem;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    text-align: left;
+    text-align: start;
   }
 
-  .project-images figure {
+  .images figure {
     min-width: 100%;
-    scroll-snap-align: start;
-  }
-
-  .project-images img {
-    margin: 0;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #quartz-root.page {
+  body {
     padding: 1em;
   }
 
-  .site-nav-desktop {
+  .topnav {
     display: none;
   }
 
-  .site-nav-mobile {
+  .togglenav {
     display: block;
   }
 
-  body[data-slug="index"] article,
-  body[data-slug="about"] article,
-  body[data-slug="contact"] article,
-  body[data-slug="404"] article {
-    margin-top: 3rem;
+  .togglenav:hover {
+    cursor: pointer;
   }
 
-  body[data-slug="index"] article > h2,
-  body[data-slug="about"] article > h2 {
-    margin-bottom: 2rem;
+  .topnav.responsive {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8rem;
   }
 }
