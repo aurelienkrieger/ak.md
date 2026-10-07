@@ -99,13 +99,13 @@ plugins:
 layout:
   byPageType:
     content:
-      template: full-width
+      template: portfolio
       positions:
         beforeBody: []
         left: []
         right: []
     "404":
-      template: full-width
+      template: portfolio
       positions:
         beforeBody: []
         left: []

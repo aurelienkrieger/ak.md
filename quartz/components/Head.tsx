@@ -1,5 +1,5 @@
 import { i18n } from "../i18n"
-import { FullSlug, getFileExtension, joinSegments, pathToRoot } from "../util/path"
+import { getFileExtension, joinSegments } from "../util/path"
 import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
 import { googleFontHref, googleFontSubsetHref } from "../util/theme"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
@@ -11,28 +11,35 @@ export default (() => {
     fileData,
     externalResources,
     ctx,
+    allFiles,
   }: QuartzComponentProps) => {
-    const titleSuffix = cfg.pageTitleSuffix ?? ""
+    // Site-wide defaults live in the frontmatter of content/index.md
+    // (`description`, `image`); any page can override them in its own frontmatter.
+    const home = allFiles.find((f) => f.slug === "index")?.frontmatter
+
+    const pageName = fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
     const title =
-      (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix
+      (fileData.slug === "index" ? cfg.pageTitle : `${cfg.pageTitle} - ${pageName}`) +
+      (cfg.pageTitleSuffix ?? "")
     const description =
       fileData.frontmatter?.socialDescription ??
       fileData.frontmatter?.description ??
+      home?.description ??
       unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
 
     const { css, js, additionalHead } = externalResources
 
     const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
-    const path = url.pathname as FullSlug
-    const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
-    const iconPath = joinSegments(baseDir, "static/icon.png")
 
     // Url of current page
     const socialUrl =
       fileData.slug === "404" ? url.toString() : joinSegments(url.toString(), fileData.slug!)
 
     const usesCustomOgImage = ctx.cfg.plugins.emitters.some((e) => e.name === "CustomOgImages")
-    const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
+    const ogImage = fileData.frontmatter?.image ?? home?.image
+    const ogImageDefaultPath = ogImage
+      ? `https://${cfg.baseUrl}/${String(ogImage).replace(/^\/+/, "")}`
+      : undefined
 
     const coreStylesheet = css[0]?.content
     const coreScript = js.find(
@@ -69,7 +76,7 @@ export default (() => {
         <meta property="og:description" content={description} />
         <meta property="og:image:alt" content={description} />
 
-        {!usesCustomOgImage && (
+        {!usesCustomOgImage && ogImageDefaultPath && (
           <>
             <meta property="og:image" content={ogImageDefaultPath} />
             <meta property="og:image:url" content={ogImageDefaultPath} />
@@ -89,7 +96,6 @@ export default (() => {
           </>
         )}
 
-        <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 

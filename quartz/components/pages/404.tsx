@@ -1,46 +1,33 @@
-import { i18n } from "../../i18n"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
-const NotFound: QuartzComponent = ({ cfg, ctx }: QuartzComponentProps) => {
-  const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
-  const baseDir = ctx.argv.serve ? "/" : url.pathname
-
+/**
+ * 404 page, same markup as the original site's 404.html.
+ * The script redirects wrongly-cased URLs (/About → /about) when the page exists.
+ */
+const NotFound: QuartzComponent = (_props: QuartzComponentProps) => {
   return (
     <article class="popover-hint">
-      <h1>404</h1>
-      <p>{i18n(cfg.locale).pages.error.notFound}</p>
-      <a href={baseDir}>{i18n(cfg.locale).pages.error.home}</a>
+      <div class="markdown-preview-view markdown-rendered">
+        <section id="intro">
+          <h3>404 - Page not found</h3>
+          <p>
+            Return to{" "}
+            <a class="bluelink" href="/">
+              index
+            </a>
+            .
+          </p>
+        </section>
+      </div>
       <script
         dangerouslySetInnerHTML={{
           __html: `
           if (typeof fetchData !== "undefined") {
             fetchData.then(function(index) {
-              var basePath = document.body.dataset.basepath || "";
-              if (basePath.length > 1 && basePath.endsWith("/")) {
-                basePath = basePath.slice(0, -1);
-              }
-              var pathname = window.location.pathname;
-              var hasBasePrefix = basePath.length > 1 && pathname.startsWith(basePath);
-              if (hasBasePrefix) {
-                pathname = pathname.slice(basePath.length);
-              }
-              if (pathname.startsWith("/")) {
-                pathname = pathname.slice(1);
-              }
-              if (pathname.endsWith("/")) {
-                pathname = pathname.slice(0, -1);
-              }
-              if (pathname.endsWith(".html")) {
-                pathname = pathname.slice(0, -5);
-              }
-              if (pathname.endsWith("/index")) {
-                pathname = pathname.slice(0, -6);
-              }
+              var pathname = window.location.pathname.replace(/^\\/+|\\/+$/g, "").replace(/\\.html$/, "").replace(/\\/index$/, "");
               var lowered = pathname.toLowerCase();
               if (lowered !== pathname && index[lowered] != null) {
-                var prefix = hasBasePrefix ? basePath : "";
-                var target = prefix + (prefix.endsWith("/") ? "" : "/") + lowered;
-                window.location.replace(target);
+                window.location.replace("/" + lowered);
               }
             });
           }

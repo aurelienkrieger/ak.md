@@ -1,5 +1,6 @@
 ---
 type: page
+nav: 3
 title: "Contact"
 ---
 # Contact

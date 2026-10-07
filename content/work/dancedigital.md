@@ -14,9 +14,9 @@ I have been involved in the project between March 2014 and 2015. As an educator 
 
 Learn more about the project from dancedigital’s website :
 
-*“The dancedigital FutureNetwork brings professional dance and technology artists to your school to work with the teachers and young people to explore new ways of learning. The framework offers schools a combination of artist led workshops with young people, mentoring and training sessions for teachers, the opportunity to see professional dance and technology work on stage and engage in the creation of a technology driven dance work that will be showcased in professional environment.
-
-dancedigital is passionate about future ways of learning and problem solving offered by making connections across the artistic, technological and scientific disciplines. We invite schools to join us in the exploration of integrating dance and technology in broad range of subject areas with a focus on STEAM subjects.”*
+> “The dancedigital FutureNetwork brings professional dance and technology artists to your school to work with the teachers and young people to explore new ways of learning. The framework offers schools a combination of artist led workshops with young people, mentoring and training sessions for teachers, the opportunity to see professional dance and technology work on stage and engage in the creation of a technology driven dance work that will be showcased in professional environment.
+>
+> dancedigital is passionate about future ways of learning and problem solving offered by making connections across the artistic, technological and scientific disciplines. We invite schools to join us in the exploration of integrating dance and technology in broad range of subject areas with a focus on STEAM subjects.”
 
 ## Images
 

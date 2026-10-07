@@ -1,4 +1,16 @@
-@use "./variables.scss" as *;
+/*
+ * Portfolio styles — a transcription of the original site's main.css,
+ * index.css, about.css, contact.css and project.css.
+ *
+ * The DOM these rules target is produced by quartz/util/portfolio.ts:
+ *
+ *   header, #intro, .about_section, .columns          (index / about / contact / 404)
+ *   .container > .content.description + .content.images   (work/*)
+ *
+ * Quartz's own base.scss is loaded first and is quite opinionated (line
+ * heights, heading sizes, table padding, link highlights…). Everything below
+ * is prefixed with `.page` so it reliably wins, and resets what Quartz adds.
+ */
 
 :root {
   --bg-color: #f5f5f5;
@@ -7,12 +19,14 @@
   --accent2-color: #d7691e;
 }
 
-/*
- * Portfolio styles intentionally mirror the original static site's CSS.
- * Quartz is kept as the renderer; its generic visual chrome is neutralized here.
- */
+/* ── Document ─────────────────────────────────────────────────────────── */
 
 html {
+  /* Quartz sets overflow-x:hidden + width:100vw, which stops the body's
+     overflow from reaching the viewport (project pages rely on that). */
+  overflow: visible;
+  width: auto;
+  scroll-behavior: auto;
   background-color: var(--bg-color);
 }
 
@@ -27,96 +41,9 @@ body {
   overflow-x: hidden;
 }
 
-#quartz-root.page {
-  max-width: none;
-  margin: 0;
-  padding: 0;
-}
-
-.page[data-frame="full-width"] > #quartz-body {
-  display: block;
-  padding: 0;
-}
-
-.page[data-frame="full-width"] .center.full-width {
-  width: 100%;
-  min-width: 0;
-  max-width: none;
-  margin: 0;
-}
-
-.page[data-frame="full-width"] .page-header {
-  margin: 0;
-}
-
-.page[data-frame="full-width"] .center > hr,
-.page[data-frame="full-width"] .page-footer {
-  display: none;
-}
-
-article {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  color: var(--text-color);
-}
-
-article > h1:first-child {
-  display: none;
-}
-
-/* Restore the simple browser-like typography used by the original site. */
-p,
-li,
-td,
-th {
-  color: var(--text-color);
-  line-height: normal;
-}
-
-p {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Inter", sans-serif;
-  color: var(--text-color);
-}
-
-h1 {
-  font-size: 1rem;
-  font-weight: bold;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px dashed var(--text-color);
-  margin-block-start: 0.67em;
-  margin-block-end: 50px;
-}
-
-h2 {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-}
-
-h3 {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-h1 a[role="anchor"],
-h2 a[role="anchor"],
-h3 a[role="anchor"],
-h4 a[role="anchor"],
-h5 a[role="anchor"],
-h6 a[role="anchor"] {
-  display: none;
+/* Project pages are a fixed-height two-column layout that scrolls inside. */
+body:has(.container) {
+  overflow-y: hidden;
 }
 
 ::selection {
@@ -124,53 +51,127 @@ h6 a[role="anchor"] {
   color: var(--bg-color);
 }
 
-a,
-article a,
-article a.internal,
-article a.external {
+/* ── Quartz shell: collapse the grid into a plain block ───────────────── */
+
+.page[data-frame="portfolio"] {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page[data-frame="portfolio"] > #quartz-body {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.page[data-frame="portfolio"] > #quartz-body .center {
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+}
+
+/* ── Typography ───────────────────────────────────────────────────────── */
+
+.page p,
+.page li,
+.page td,
+.page tbody {
+  color: var(--text-color);
+  line-height: inherit;
+}
+
+.page strong {
+  font-weight: bold;
+}
+
+.page h1,
+.page h2,
+.page h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.page h1 {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--text-color);
+  margin-top: 0.67em;
+  margin-bottom: 50px;
+}
+
+.page h2 {
+  font-size: 1.1rem;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+
+.page h3 {
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.page h1 a[role="anchor"],
+.page h2 a[role="anchor"],
+.page h3 a[role="anchor"] {
+  display: none;
+}
+
+.page p {
+  margin-block: 1em;
+}
+
+.page ul {
+  margin-block: 1em;
+}
+
+/* ── Links ────────────────────────────────────────────────────────────── */
+
+.page a,
+.page a.internal,
+.page a.external {
   color: var(--accent-color);
   font-weight: inherit;
   background: transparent;
   border-radius: 0;
   padding: 0;
   line-height: inherit;
+  text-decoration: none;
 }
 
-article a:hover,
-article a.internal:hover,
-article a.external:hover {
+.page a.bluelink:hover {
   color: var(--bg-color);
   background-color: var(--accent-color);
   text-decoration: none;
   font-style: italic;
 }
 
-article a.external .external-icon {
+.page a.external .external-icon {
   display: none;
 }
 
-/* Header — same dimensions and spacing as the original HTML site. */
-header {
+/* ── Header ───────────────────────────────────────────────────────────── */
+
+.page header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#logo {
+.page #logo {
   width: 110px;
   padding: 0;
   margin: 0;
 }
 
-#logo a {
+.page #logo a {
   display: block;
-  text-decoration: none;
-  color: #f0f0f0;
   font-size: 0.74rem;
 }
 
-#logo img {
-  display: block;
+.page #logo img {
   max-width: 100%;
   height: auto;
   margin: 0;
@@ -178,28 +179,27 @@ header {
   filter: invert(1);
 }
 
-.topnav {
+.page .topnav {
   margin: 0;
   padding: 0;
 }
 
-.topnav a {
-  text-decoration: none;
+.page .topnav a {
   color: var(--text-color);
   padding: 0 0 0 2.5rem;
   text-align: right;
 }
 
-.topnav a:hover,
-.topnav a.active {
+.page .topnav a:hover,
+.page .topnav a.active {
   color: var(--accent-color);
 }
 
-.togglenav {
+.page .togglenav {
   display: none;
 }
 
-.togglenav span {
+.page .togglenav span {
   display: block;
   width: 20px;
   height: 2px;
@@ -207,40 +207,31 @@ header {
   background: var(--text-color);
 }
 
-/* Shared content blocks from the original site. */
-#intro {
+/* ── Intro and sections (index, about, contact, 404) ──────────────────── */
+
+.page #intro {
   max-width: 600px;
   margin: 3rem 0;
 }
 
-.about_section {
+.page #intro ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 140%;
+}
+
+.page .about_section {
   max-width: 900px;
   margin: 3rem 0;
   line-height: 140%;
 }
 
-.about_section li,
-.about_section p,
-.about_section td {
-  line-height: 140%;
-}
-
-ul {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
-
-td {
-  padding-right: 1rem;
-  vertical-align: top;
-}
-
-/* Quartz wraps Markdown tables; neutralize its table presentation. */
-.table-container {
+/* Markdown tables: the header row only exists to make the table valid. */
+.page .table-container {
   overflow: visible;
 }
 
-.table-container > table {
+.page .table-container > table {
   width: auto;
   margin: 0;
   padding: 0;
@@ -248,150 +239,133 @@ td {
   border-spacing: 2px;
 }
 
-table thead {
+.page .table-container > table > * {
+  line-height: inherit;
+}
+
+.page table thead {
   display: none;
 }
 
-tr {
+.page tr {
   border: 0;
 }
 
-th,
-td {
+.page th,
+.page td {
   min-width: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 1px 1rem 1px 1px;
   border: 0;
+  vertical-align: top;
 }
 
-/* About */
-#expertise {
+/* Several ### blocks inside a section become columns. Columns of text
+   (expertise) are wider apart than columns of lists (clients). */
+.page .columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 6rem;
+  column-gap: 6rem;
 }
 
-#clients {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 2rem;
+.page .columns:has(ul) {
+  column-gap: 2rem;
 }
 
-#clients ul {
+.page .columns ul {
   list-style: none;
   padding-left: 0;
 }
 
-/* Contact */
-body[data-slug="contact"] #intro ul {
-  list-style: none;
-  padding-left: 0;
-  line-height: 140%;
-}
+/* ── Project pages (work/*) ───────────────────────────────────────────── */
 
-body[data-slug="contact"] #intro li {
-  line-height: 140%;
-}
-
-/* Project pages — direct transcription of project.css. */
-body[data-slug^="work/"] {
-  overflow-y: hidden;
-}
-
-body[data-slug^="work/"] h2 {
-  margin-top: 0;
-}
-
-body[data-slug^="work/"] article img {
-  max-width: 100%;
-  height: auto;
-  margin: 0;
-  border-radius: 0;
-}
-
-body[data-slug^="work/"] figure {
-  padding: 0;
-  margin: auto;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-}
-
-.container {
+.page .container {
   display: flex;
   height: calc(100vh - 100px - 6em);
   margin: 2rem 0;
   gap: 3rem;
 }
 
-.content {
+.page .container h2 {
+  margin-top: 0;
+}
+
+.page .content {
   width: 50%;
   min-width: 0;
 }
 
-.description {
+.page .description {
   overflow-y: auto;
 }
 
-.credits {
+.page .credits {
   margin-top: 2rem;
 }
 
-.credits,
-.credits ul {
+.page .credits,
+.page .credits ul {
   list-style: none;
   padding: 0;
 }
 
-.images {
+.page .images {
   overflow-y: scroll;
   text-align: end;
 }
 
-.images figcaption {
+.page .images img {
+  width: 640px;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+}
+
+.page figure {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.page figcaption {
   line-height: normal;
 }
 
-/* Original responsive rules. */
+/* ── Responsive (same breakpoints as the original) ────────────────────── */
+
 @media screen and (max-width: 1000px) {
-  #expertise {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  .page .columns {
+    grid-template-columns: 1fr;
   }
 
-  #expertise div {
+  .page .columns:not(:has(ul)) > div {
     margin: 0;
     max-width: 700px;
-  }
-
-  #clients {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 2rem;
   }
 }
 
 @media screen and (max-width: 900px) {
-  body[data-slug^="work/"] {
+  body:has(.container) {
     overflow-y: scroll;
   }
 
-  .container {
+  .page .container {
     flex-direction: column-reverse;
     height: 100%;
     gap: 1rem;
   }
 
-  .content {
+  .page .content {
     width: 100%;
   }
 
-  .images {
+  .page .images {
     display: flex;
     gap: 1rem;
     text-align: start;
   }
 
-  .images figure {
+  .page figure {
     min-width: 100%;
     height: auto;
   }
@@ -402,19 +376,19 @@ body[data-slug^="work/"] figure {
     padding: 1em;
   }
 
-  .topnav {
+  .page .topnav {
     display: none;
   }
 
-  .togglenav {
+  .page .togglenav {
     display: block;
   }
 
-  .togglenav:hover {
+  .page .togglenav:hover {
     cursor: pointer;
   }
 
-  .topnav.responsive {
+  .page .topnav.responsive {
     position: relative;
     display: flex;
     flex-direction: column;

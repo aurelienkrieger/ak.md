@@ -1,5 +1,8 @@
 ---
 type: page
+nav: 1
+description: "Producer for art, education & cultural projects."
+image: assets/images/aurelienkrieger_com.jpg
 title: "Aurélien Krieger"
 ---
 # Aurélien Krieger

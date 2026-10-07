@@ -1,5 +1,6 @@
 ---
 type: page
+nav: 2
 title: "About"
 ---
 # About
@@ -69,6 +70,6 @@ Programming of cultural projets and participative activities that foster a dialo
 
 | Years | Training |
 | --- | --- |
-| 2022 | Professional Training “Facilitator of active learning” - Simplon, Marseille, FR<br><br>*Related coursework: theory of teaching, designing a curriculum, active pedagogy and group facilitation* |
-| 2018 - 2019 | Professional Training “Cultural entrepreneurship at the digital age” - Illusion & Macadam, Montpellier, FR<br><br>Definition of the project, entrepreneurial profiling.<br><br>*Related coursework: business plan, business model, sales & digital marketing, financing* |
-| 2009 - 2013 | Master of Science degree - Mines de Nantes Engineering School, Nantes, FR<br><br>Major in Organisation and Management of Information Technologies<br><br>*Related coursework: project management, sociology and change management, strategy and innovation, information technologies, software design and development, computer graphics, introduction to economy and accounting* |
+| 2022 | Professional Training “Facilitator of active learning” - Simplon, Marseille, FR<br>*Related coursework: theory of teaching, designing a curriculum, active pedagogy and group facilitation* |
+| 2018 - 2019 | Professional Training “Cultural entrepreneurship at the digital age” - Illusion & Macadam, Montpellier, FR<br>Definition of the project, entrepreneurial profiling.<br>*Related coursework: business plan, business model, sales & digital marketing, financing* |
+| 2009 - 2013 | Master of Science degree - Mines de Nantes Engineering School, Nantes, FR<br>Major in Organisation and Management of Information Technologies<br>*Related coursework: project management, sociology and change management, strategy and innovation, information technologies, software design and development, computer graphics, introduction to economy and accounting* |
