@@ -2,7 +2,7 @@
 type: project
 title: "true/false"
 featured: false
-cover: "[[Attachments/truefalse/truefalse_03-1024x576.jpg]]"
+cover: "[[assets/images/truefalse/truefalse_03-1024x576.jpg]]"
 ---
 # true/false
 
@@ -22,22 +22,22 @@ At the time of the project I working as a team member of onformative in the qual
 
 ## Images
 
-![[Attachments/truefalse/truefalse_03-1024x576.jpg]]
+![[assets/images/truefalse/truefalse_03-1024x576.jpg]]
 
 *Photo credit: onformative*
 
-![[Attachments/truefalse/truefalse_04-1024x576.jpg]]
+![[assets/images/truefalse/truefalse_04-1024x576.jpg]]
 
 *Photo credit: onformative*
 
-![[Attachments/truefalse/truefalse_05-1024x576.jpg]]
+![[assets/images/truefalse/truefalse_05-1024x576.jpg]]
 
 *Photo credit: onformative*
 
-![[Attachments/truefalse/truefalse_06-1024x576.jpg]]
+![[assets/images/truefalse/truefalse_06-1024x576.jpg]]
 
 *Photo credit: onformative*
 
-![[Attachments/truefalse/truefalse_07-1024x576.jpg]]
+![[assets/images/truefalse/truefalse_07-1024x576.jpg]]
 
 *Photo credit: onformative*

@@ -2,7 +2,7 @@
 type: project
 title: "Yellow Lounge"
 featured: false
-cover: "[[Attachments/yellowlounge/LIGHTLINES_01-1024x576.jpg]]"
+cover: "[[assets/images/yellowlounge/LIGHTLINES_01-1024x576.jpg]]"
 ---
 # Yellow Lounge
 
@@ -20,18 +20,18 @@ For the 2nd edition of Yellow Lounge Paris @ [Batofar](https://ra.co/clubs/3347)
 
 ## Images
 
-![[Attachments/yellowlounge/LIGHTLINES_01-1024x576.jpg]]
+![[assets/images/yellowlounge/LIGHTLINES_01-1024x576.jpg]]
 
 *Photo credit: Pixel Carré*
 
-![[Attachments/yellowlounge/LIGHTLINES_02-1024x576.jpg]]
+![[assets/images/yellowlounge/LIGHTLINES_02-1024x576.jpg]]
 
 *Photo credit: Pixel Carré*
 
-![[Attachments/yellowlounge/LIGHTLINES_03-1024x576.jpg]]
+![[assets/images/yellowlounge/LIGHTLINES_03-1024x576.jpg]]
 
 *Photo credit: Pixel Carré*
 
-![[Attachments/yellowlounge/LIGHTLINES_04-1024x576.jpg]]
+![[assets/images/yellowlounge/LIGHTLINES_04-1024x576.jpg]]
 
 *Photo credit: Pixel Carré*

@@ -4,7 +4,7 @@ title: "dancedigital"
 featured: true
 home_order: 7
 summary: "framework for personal creativity and STEAM education using dance and digital interfaces"
-cover: "[[Attachments/dancedigital/FutureNetwork_02-1024x577.jpg]]"
+cover: "[[assets/images/dancedigital/FutureNetwork_02-1024x577.jpg]]"
 ---
 # dancedigital
 
@@ -20,18 +20,18 @@ dancedigital is passionate about future ways of learning and problem solving off
 
 ## Images
 
-![[Attachments/dancedigital/FutureNetwork_02-1024x577.jpg]]
+![[assets/images/dancedigital/FutureNetwork_02-1024x577.jpg]]
 
 *Photo credit: dancedigital*
 
-![[Attachments/dancedigital/FutureNetwork_03-1024x577.jpg]]
+![[assets/images/dancedigital/FutureNetwork_03-1024x577.jpg]]
 
 *Photo credit: dancedigital*
 
-![[Attachments/dancedigital/FutureNetwork_01-661x431.jpg]]
+![[assets/images/dancedigital/FutureNetwork_01-661x431.jpg]]
 
 *Photo credit: dancedigital*
 
-![[Attachments/dancedigital/FutureNetwork_05-894x544.jpg]]
+![[assets/images/dancedigital/FutureNetwork_05-894x544.jpg]]
 
 *Photo credit: dancedigital*

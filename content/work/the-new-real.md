@@ -2,7 +2,7 @@
 type: project
 title: "The New Real"
 featured: false
-cover: "[[Attachments/thenewreal/thenewreal_03-1080x1021.jpg]]"
+cover: "[[assets/images/thenewreal/thenewreal_03-1080x1021.jpg]]"
 ---
 # The New Real
 
@@ -25,14 +25,14 @@ My role was to translate the artistic concepts into technical requirements and s
 
 ## Images
 
-![[Attachments/thenewreal/thenewreal_03-1080x1021.jpg]]
+![[assets/images/thenewreal/thenewreal_03-1080x1021.jpg]]
 
 *Photo credit: Keziah MacNeill at the Edinburgh exhibition*
 
-![[Attachments/thenewreal/thenewreal_02-1080x540.jpg]]
+![[assets/images/thenewreal/thenewreal_02-1080x540.jpg]]
 
 *Photo credit: Tom Mesic at the Ars Electronica exhibition*
 
-![[Attachments/thenewreal/thenewreal_01-1080x540.jpg]]
+![[assets/images/thenewreal/thenewreal_01-1080x540.jpg]]
 
 *Photo credit: Tom Mesic at the Ars Electronica exhibition*

@@ -2,7 +2,7 @@
 type: project
 title: "Color Piano"
 featured: false
-cover: "[[Attachments/colorpiano/masomenoslab_05-1024x576.jpg]]"
+cover: "[[assets/images/colorpiano/masomenoslab_05-1024x576.jpg]]"
 ---
 # Color Piano
 
@@ -22,26 +22,26 @@ The same tool can be used for both interactive installations and live performanc
 
 ## Images
 
-![[Attachments/colorpiano/masomenoslab_05-1024x576.jpg]]
+![[assets/images/colorpiano/masomenoslab_05-1024x576.jpg]]
 
 *Photo credit: masomenos*
 
-![[Attachments/colorpiano/masomenoslab_02-1024x571.jpg]]
+![[assets/images/colorpiano/masomenoslab_02-1024x571.jpg]]
 
 *Photo credit: masomenos*
 
-![[Attachments/colorpiano/masomenoslab_01-1024x552.jpg]]
+![[assets/images/colorpiano/masomenoslab_01-1024x552.jpg]]
 
 *Photo credit: masomenos*
 
-![[Attachments/colorpiano/masomenoslab_03-1024x579.jpg]]
+![[assets/images/colorpiano/masomenoslab_03-1024x579.jpg]]
 
 *Photo credit: masomenos*
 
-![[Attachments/colorpiano/masomenoslab_06-1024x574.jpg]]
+![[assets/images/colorpiano/masomenoslab_06-1024x574.jpg]]
 
 *Photo credit: masomenos*
 
-![[Attachments/colorpiano/masomenoslab_04-1024x576.jpg]]
+![[assets/images/colorpiano/masomenoslab_04-1024x576.jpg]]
 
 *Photo credit: masomenos*

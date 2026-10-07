@@ -2,7 +2,7 @@
 type: project
 title: "Creative coding courses"
 featured: false
-cover: "[[Attachments/creativecoding/circuito_02-1080x720.jpg]]"
+cover: "[[assets/images/creativecoding/circuito_02-1080x720.jpg]]"
 ---
 # Creative coding courses
 
@@ -30,14 +30,14 @@ These courses not only teach them the fundamentals of computer science but equip
 
 ## Images
 
-![[Attachments/creativecoding/circuito_02-1080x720.jpg]]
+![[assets/images/creativecoding/circuito_02-1080x720.jpg]]
 
 *Photo credit: Lais Pereira / Circuito – Serviço Educativo Braga Media Arts*
 
-![[Attachments/creativecoding/blueshift_03-768x550.jpg]]
+![[assets/images/creativecoding/blueshift_03-768x550.jpg]]
 
 *Photo credit: blueshift coding*
 
-![[Attachments/creativecoding/circuito_01-1080x720.jpg]]
+![[assets/images/creativecoding/circuito_01-1080x720.jpg]]
 
 *Photo credit: Lais Pereira / Circuito – Serviço Educativo Braga Media Arts*
