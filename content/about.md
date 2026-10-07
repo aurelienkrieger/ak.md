@@ -1,7 +1,6 @@
 ---
 type: page
 title: "About"
-permalink: /about
 ---
 # About
 

@@ -1,7 +1,6 @@
 ---
 type: project
 title: "Web development & Digital culture"
-permalink: /work/simplon-co
 featured: false
 cover: "[[Attachments/simplon/simplon_01-1080x810.jpg]]"
 ---

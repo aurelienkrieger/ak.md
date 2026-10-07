@@ -1,7 +1,6 @@
 ---
 type: project
 title: "true/false"
-permalink: /work/true-false
 featured: false
 cover: "[[Attachments/truefalse/truefalse_03-1024x576.jpg]]"
 ---

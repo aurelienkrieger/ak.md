@@ -1,7 +1,6 @@
 ---
 type: project
 title: "The Infinite Bridge"
-permalink: /work/the-infinite-bridge
 featured: true
 home_order: 8
 summary: "multi-disciplinary live performance project connecting artists and creative professionals across remote locations."

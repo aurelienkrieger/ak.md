@@ -1,7 +1,6 @@
 ---
 type: project
 title: "Residuum"
-permalink: /work/residuum
 featured: false
 cover: "[[Attachments/residuum/residuum_01-1280x720.jpg]]"
 ---

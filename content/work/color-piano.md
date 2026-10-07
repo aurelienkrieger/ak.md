@@ -1,7 +1,6 @@
 ---
 type: project
 title: "Color Piano"
-permalink: /work/color-piano
 featured: false
 cover: "[[Attachments/colorpiano/masomenoslab_05-1024x576.jpg]]"
 ---

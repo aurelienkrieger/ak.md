@@ -1,7 +1,6 @@
 ---
 type: project
 title: "London Electronic Orchestra"
-permalink: /work/london-electronic-orchestra
 featured: false
 cover: "[[Attachments/londonelectronicorchestra/LEO_01-750x442.jpeg]]"
 ---

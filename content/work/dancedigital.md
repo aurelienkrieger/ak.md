@@ -1,7 +1,6 @@
 ---
 type: project
 title: "dancedigital"
-permalink: /work/dancedigital
 featured: true
 home_order: 7
 summary: "framework for personal creativity and STEAM education using dance and digital interfaces"

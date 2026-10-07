@@ -1,7 +1,6 @@
 ---
 type: project
 title: "Meandering River"
-permalink: /work/meandering-river
 featured: true
 home_order: 5
 summary: "immersive audio-visual installation, algorithmic simulation of the rivers' oscillating behaviours"

@@ -1,7 +1,6 @@
 ---
 type: project
 title: "Yellow Lounge"
-permalink: /work/yellow-lounge
 featured: false
 cover: "[[Attachments/yellowlounge/LIGHTLINES_01-1024x576.jpg]]"
 ---

@@ -1,7 +1,6 @@
 ---
 type: project
 title: "O.R.S. (Orbital River Station)"
-permalink: /work/ors
 featured: true
 home_order: 3
 summary: "floating artwork raising awareness of our relationship with the Rhône river and flood management"

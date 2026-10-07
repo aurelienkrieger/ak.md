@@ -1,7 +1,6 @@
 ---
 type: project
 title: "Art + Code"
-permalink: /work/art-code
 featured: false
 cover: "[[Attachments/artcode/artcode_01-1024x683.jpg]]"
 ---
