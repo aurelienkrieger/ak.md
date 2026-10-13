@@ -8,6 +8,7 @@ La mise en page est reconstruite automatiquement à partir de la **structure des
 
 ```bash
 npm install                 # une seule fois
+npm ci                      # une seule fois pour reconstruire l'env.
 npx quartz build --serve    # aperçu local
 npx quartz build            # génère le site final dans public/
 ```
@@ -230,7 +231,7 @@ Elle est gérée par le code (`quartz/components/pages/404.tsx`). Pour changer s
 - Ne mettre qu'un seul `#` par fichier, tout en haut
 - Ne pas utiliser `#` pour des sections, commencer par `##`. Ne pas sauter de niveau de titre (pas de `###` sans `##` avant)
 - Ne pas oublier la ligne d'en-tête d'un tableau
-- Toujours laisser une ligne vide entre les une image et sa légende 
+- Toujours laisser une ligne vide entre une image et sa légende 
 - Les champs `featured`, `home_order`, `summary` et `cover` des fichiers projet ne sont pas utilisés. Ils peuvent être supprimés. Pour qu'une image serve à l'aperçu sur les réseaux sociaux, renommer `cover` en `image`.
 
 ## 9. Liste de vérification avant de publier
@@ -249,8 +250,8 @@ Elle est gérée par le code (`quartz/components/pages/404.tsx`). Pour changer s
 - **`package.json`** : liste les dépendances dont le projet a besoin
 - **`package-lock.json`** : fige les versions exactes de toutes les dépendances. C'est la « recette » pour reconstruire l'environnement à l'identique
 - **`node_modules/`** : les dépendances installées. C'est ce dossier que Quartz utilise réellement quand le build est lancé. Il **n'est pas portable d'un environnement à un autre**. On le génère sur place, plutôt que de le copier.
-- **`.nvmrc`** est un fichier texte qui contient la version de Node utilisée au moment de construire le projet. Il sert de référence pour plus tard.
-- **`.htaccess`** est le fichier de configuration utilisé par les serveurs web **Apache**. Il définit notamment comment interpréter les liens internes tels que `work/ors` pour ouvrir le fichier correspondant `work/ors.html`
+- **`.nvmrc`** est un fichier texte qui contient la version de Node utilisée au moment de construire le projet. Il est archivé dans le dossier `nvmrc`, `nvm use` ne le lira pas, car il le cherche à la racine du projet. `.nvmrc` sert ici de uniquement de référence. 
+- **`.htaccess`** est le fichier de configuration utilisé par les serveurs web **Apache**. Il définit notamment comment interpréter les adresses (URL) sans extension telles que `work/ors` qui servira le fichier `work/ors.html`.
 
 ### Règles à retenir
 
@@ -259,12 +260,12 @@ Elle est gérée par le code (`quartz/components/pages/404.tsx`). Pour changer s
 
 ### Lignes de commande
 
-**`npm install`** peut mettre à jour des versions et réécrire le lockfile : à réserver pour l'ajout ou à la mise à jour d'un paquet. Il compare `package.json` et `package-lock.json` s’il existe :
+**`npm install`** est à réserver uniquement pour l'ajout ou à la mise à jour d'un paquet. Il compare `package.json` et `package-lock.json` s’il existe :
 - Si le lockfile existe et correspond à `package.json`, il installe les versions du lockfile, et ignore les plus récentes sans rien mettre à jour dans le lockfile
-- Il ne cherche de nouvelles versions que si `package.json` a changé (dépendance ajoutée ou plage modifiée) ou s’il n’y a pas de lockfile. Dans ce cas, il réécrit `package-lock.json`.
+- Il ne cherche de nouvelles versions que si `package.json` a changé (dépendance ajoutée ou plage modifiée) ou s’il n’y a pas de lockfile. Dans ce cas, il met à jour les versions et réécrit `package-lock.json`.
 - Il garde l’éventuel `node_modules` et le complète.
 
-**`npm ci`** permet de faire un "clean install". Il permet de reconstruire le site sur une nouvelle machine uniquement d’après `package-lock.json` :
+**`npm ci`** permet de reconstruire l'environnement sur une nouvelle machine uniquement d’après `package-lock.json` :
 - Il supprime d’abord `node_modules`, puis le recrée en installant exactement les versions du `package-lock.json`
 - Il ne modifie jamais `package.json` ni `package-lock.json`.
 - Si `package.json` et `package-lock.json` ne correspondent pas ou que le lockfile est absent, il s'arrête avec une erreur.
