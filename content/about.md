@@ -5,25 +5,25 @@ title: "About"
 ---
 # About
 
-Production manager for art, education and cultural projects with over 10 years of international experience. I develop and coordinate residencies, exhibitions, performances, workshops and other participatory formats.
+Project manager for art, science and education with over 10 years of international experience. My main focus is to support collaborative projects that explore contemporary issues of humans, nature and technology through multidisciplinary research & cultural programs.
 
-My main focus is to support collaborative projects that explore contemporary issues of humans, nature and technology through multidisciplinary art & public participation. I also design collective learning spaces that emphasise critical thinking and creative exploration, where artists, audiences and professionals learn, share and create together.
+I develop and coordinate art residencies, public events, workshops, science outreach activities and other participatory formats. I also design collective learning spaces where artists, researchers, audiences and professionals can learn, share and create together.
 
 Co-founder at [obsolete.studio](https://obsolete.studio).
 
 ## expertise
 
-### Creative production
+### Project management
 
-Production management of inter-disciplinary art projects exploring contemporary topics related to technology and natural ecosystems.
+Planning, coordination of operations and partnerships, bringing together people and resources across disciplines.
 
 ### Collective learning
 
-Design and facilitation of creative labs encouraging peer learning, critical making and exploration for artists, engineers, designers, researchers.
+Design and facilitation of creative labs encouraging peer learning and critical making for artists, engineers, designers, researchers.
 
 ### Cultural programming
 
-Programming of cultural projets and participative activities that foster a dialogue between creators and audiences for imagination, creativity and critical thinking.
+Programming of events and participative activities fostering public scientific literacy and open debate on contemporary topics.
 
 ## selected clients & partners
 
@@ -56,8 +56,9 @@ Programming of cultural projets and participative activities that foster a dialo
 
 ### Education & Research institutions
 
-- Braga Media Arts (Braga, PT)
-- University of Edinburgh (Edinburgh, UK)
+- Nantes Université (FR)
+- Braga Media Arts (PT)
+- University of Edinburgh (UK)
 - Centrale (Marseille, FR)
 - Simplon (Marseille, FR)
 - 42 Lisboa (Lisbon, PT)

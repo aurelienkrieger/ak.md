@@ -1,20 +1,20 @@
 ---
 type: page
 nav: 1
-description: "Producer for art, education & cultural projects."
+description: Project manager for art ~ science ~ education
 image: assets/images/aurelienkrieger_com.jpg
 image_width: 688
 image_height: 689
-author: "Aurélien Krieger"
-keywords: "art, engineer, science, technology, education, culture"
-url: "https://www.aurelienkrieger.com"
-title: "Aurélien Krieger"
+author: Aurélien Krieger
+keywords: art, engineering, engineer, science, technology, education, culture
+url: https://www.aurelienkrieger.com
+title: Aurélien Krieger
 ---
 # Aurélien Krieger
 
-Cultural producer with a focus on multidisciplinary art & educational projects fostering a dialogue between creators and audiences.
+Project manager at the intersection of art ~ science ~ education. My goal is to foster public literacy and an open dialogue on scientific and societal issues.
 
-Co-founder at [obsolete.studio](https://obsolete.studio).
+Co-founder at [obsolete.studio](https://obsolete.studio). <br>Events production manager at [Nantes Université](https://english.univ-nantes.fr/).
 
 ## selected projects
 
