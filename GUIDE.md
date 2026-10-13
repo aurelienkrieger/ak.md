@@ -268,9 +268,3 @@ Elle est gérée par le code (`quartz/components/pages/404.tsx`). Pour changer s
 - Il supprime d’abord `node_modules`, puis le recrée en installant exactement les versions du `package-lock.json`
 - Il ne modifie jamais `package.json` ni `package-lock.json`.
 - Si `package.json` et `package-lock.json` ne correspondent pas ou que le lockfile est absent, il s'arrête avec une erreur.
-
-### Précautions à prendre dès maintenant
-
-1. **Noter la version de Node utilisée** : lance `node -v`, puis écris le numéro de version majeure (par exemple `22`) dans un fichier `.nvmrc` à la racine du projet.
-2. **Garder une archive du projet** avec son `node_modules` qui fonctionne, ainsi que le programme d'installation de cette version de Node pour ton système.
-3. **Option plus robuste : Docker.** Un `Dockerfile` fige la version de Node et les dépendances dans une image qui fonctionne sur n'importe quel système.
