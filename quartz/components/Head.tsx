@@ -1,5 +1,5 @@
 import { i18n } from "../i18n"
-import { getFileExtension, joinSegments } from "../util/path"
+import { FilePath, getFileExtension, joinSegments, slugifyFilePath } from "../util/path"
 import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { unescapeHTML } from "../util/escape"
@@ -10,14 +10,22 @@ const imageMime = (path: string): string => {
   return ext === "jpg" ? "jpeg" : ext
 }
 
-/** "[[assets/images/a.jpg]]" (Obsidian link) or "assets/images/a.jpg" → "assets/images/a.jpg" */
-const imagePath = (value: unknown): string =>
-  String(value ?? "")
+/**
+ * "[[assets/images/ORS/a.jpg]]" (Obsidian link) or "assets/images/ORS/a.jpg"
+ * → "assets/images/ors/a.jpg".
+ * Quartz writes every asset to public/ with a slugified path (lowercase,
+ * spaces → "-"), so the og:image URL must be slugified the same way or it 404s
+ * on a case-sensitive server.
+ */
+const imagePath = (value: unknown): string => {
+  const raw = String(value ?? "")
     .trim()
     .replace(/^!?\[\[/, "")
     .replace(/\]\]$/, "")
     .split("|")[0]
     .replace(/^\/+/, "")
+  return raw ? slugifyFilePath(raw as FilePath) : ""
+}
 
 export default (() => {
   const Head: QuartzComponent = ({
